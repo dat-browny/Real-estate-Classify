@@ -3,7 +3,7 @@ import numpy as np
 from vncorenlp import VnCoreNLP
 from pyvi import ViUtils
 
-rdrsegmenter_path = '...'
+rdrsegmenter_path = '/Users/brownyeyes/Library/vncorenlp/VnCoreNLP-1.1.1.jar'
 #Path to VnCoreNLP jar file
 
 annotator = VnCoreNLP(rdrsegmenter_path, annotators="wseg", max_heap_size='-Xmx500m')

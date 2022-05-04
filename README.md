@@ -5,7 +5,7 @@
 pip install -r requirements.txt
 ```
 
-## Download VnCoreNLP
+## Install VnCoreNLP
 ```bash
 mkdir -p vncorenlp/models/wordsegmenter
 wget -q --show-progress https://raw.githubusercontent.com/vncorenlp/VnCoreNLP/master/VnCoreNLP-1.1.1.jar

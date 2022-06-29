@@ -1,7 +1,6 @@
 import re
 import numpy as np
 from vncorenlp import VnCoreNLP
-from pyvi import ViUtils
 
 rdrsegmenter_path = '/Users/brownyeyes/Library/vncorenlp/VnCoreNLP-1.1.1.jar'
 #Path to VnCoreNLP jar file
@@ -49,10 +48,6 @@ def pre_process(text):
       text = remove_punctuation(text)
       text = remove_special_characters(text)
       text = remove_number(text)
-      try:
-        text = ViUtils.add_accents(text)
-      except: 
-        pass 
       text = text.lower()
       text = remove_stopword(text)
       text = " ".join([" ".join(i) for i in annotator.tokenize(text)])
